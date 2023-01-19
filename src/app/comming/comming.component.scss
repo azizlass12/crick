@@ -1,0 +1,305 @@
+body{
+    background: #F2F1F1;
+  }
+  .container{
+    max-width: 1140px;
+    margin: 50px auto;
+  }
+  ul{
+    li{
+      list-style: none;
+    }
+  }
+  
+  // Tab css start from here
+  
+  .tab_area{
+    input, .tab_content > div{
+      display: none;
+    }
+    #tab1:checked ~ .tab_content .tab1, 
+    #tab2:checked ~ .tab_content .tab2, 
+    #tab3:checked ~ .tab_content .tab3
+    {
+      display: block;
+    }
+    #tab1:checked ~ .navbar_tab .lab1,
+    #tab2:checked ~ .navbar_tab .lab2,
+    #tab3:checked ~ .navbar_tab .lab3{
+      background: #fff;
+      color: #000;
+    }
+  }
+  
+  .navbar_tab{
+    display: flex;
+    margin-left: 80px;
+    label{
+      padding: 15px 30px;
+      position: relative;
+      background: #006442;
+      color: #fff;
+      display: block;
+      text-align: center;
+      cursor: pointer;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+  }
+  
+  // .tab_content > div{
+  //   // background: #fff;
+  //   .test{
+  //       display: flex;
+  //       justify-content: center;
+  //       align-items: center;
+  //       height: 100px;
+  //   } 
+  // }
+  
+  // Live score tab css start from here
+  .table-live{
+      background: #fff;
+      border-radius: 20px;
+  }
+  .table-live, .table-live tbody{
+    display: block;
+    width: 100%;
+  }
+  table.table-live tbody tr.upcoming-row {
+      display: flex;
+      border-bottom: 1px solid #e0e0e0;
+      cursor: pointer;
+      min-height: 150px;
+      padding: 0px 40px;
+  }
+  table.table-live tbody tr td {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  table.table-live tbody tr td:first-child {
+      width: 20%;
+      justify-content: start;
+  }
+  table.table-live tbody tr td:nth-child(2) {
+      width: 25%;
+  }
+  table.table-live tbody tr td:nth-child(3) {
+      width: 5%;
+  }
+  table.table-live tbody tr td:nth-child(3) img {
+      width: 100%;
+  }
+  table.table-live tbody tr td:nth-child(4) {
+      width: 10%;
+      line-height: 15px;
+      color: #989393;
+      text-transform: uppercase;
+  }
+  
+  table.table-live tbody tr td:nth-child(5) {
+      width: 5%;
+  }
+  table.table-live tbody tr td:nth-child(5) img{
+      width: 100%;
+  }
+  table.table-live tbody tr td:nth-child(6) {
+      width: 25%;
+  }
+  #fixture table.table-live tbody tr td:last-child {
+      width: 10%;
+  }
+  
+  table.table-live tbody tr.upcoming-row td .upcoming {
+      color: #006442;
+  }
+  table.table-live tbody tr td .upcoming h2 {
+      text-transform: uppercase;
+      font-size: 12px;
+  }
+  table.table-live tbody tr td .upcoming .liveup {
+      margin-left: 20%;
+  }
+  table.table-live tbody tr td .liveup {
+      margin-left: 10%;
+      margin-top: 15px;
+  }
+  table.table-live tbody tr.upcoming-row td .upcoming span {
+      background-color: #006442;
+      font-weight: 700;
+      color: #fff;
+      padding: 10px;
+      border-radius: 10px;
+      position: relative;
+      z-index: 1;
+  }
+  table.table-live tbody tr.upcoming-row td .upcoming span:before {
+      content: "";
+      position: absolute;
+      left: -10px;
+      top: -8px;
+      width: 50px;
+      height: 50px;
+      background: #006442;
+      border-radius: 50%;
+      z-index: -1;
+  }
+  table.table-live tbody tr td .score-content {
+      text-align: center;
+  }
+  
+  table.table-live tbody tr.upcoming-row td .upcoming-date {
+      font-weight: 700;
+      font-size: 15px;
+      color: #006442;
+  }
+  
+  
+body{
+  background: #F2F1F1;
+}
+.container{
+  max-width: 1140px;
+  margin: 50px auto;
+}
+ul{
+  li{
+    list-style: none;
+  }
+}
+
+// Tab css start from here
+
+.tab_area{
+  input, .tab_content > div{
+    display: none;
+  }
+  #tab1:checked ~ .tab_content .tab1, 
+  #tab2:checked ~ .tab_content .tab2, 
+  #tab3:checked ~ .tab_content .tab3
+  {
+    display: block;
+  }
+  #tab1:checked ~ .navbar_tab .lab1,
+  #tab2:checked ~ .navbar_tab .lab2,
+  #tab3:checked ~ .navbar_tab .lab3{
+    background: #fff;
+    color: #000;
+  }
+}
+
+.navbar_tab{
+  display: flex;
+  margin-left: 80px;
+  label{
+    padding: 15px 30px;
+    position: relative;
+    background: #006442;
+    color: #fff;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+}
+
+// .tab_content > div{
+//   // background: #fff;
+//   .test{
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       height: 100px;
+//   } 
+// }
+
+// Live score tab css start from here
+.table-live{
+    background: #fff;
+    border-radius: 20px;
+}
+.table-live, .table-live tbody{
+  display: block;
+  width: 100%;
+}
+table.table-live tbody tr.upcoming-row {
+    display: flex;
+    border-bottom: 1px solid #e0e0e0;
+    cursor: pointer;
+    min-height: 150px;
+    padding: 0px 40px;
+}
+table.table-live tbody tr td {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table.table-live tbody tr td:first-child {
+    width: 20%;
+    justify-content: start;
+}
+table.table-live tbody tr td:nth-child(2) {
+    width: 25%;
+}
+table.table-live tbody tr td:nth-child(3) {
+    width: 5%;
+}
+table.table-live tbody tr td:nth-child(3) img {
+    width: 100%;
+}
+table.table-live tbody tr td:nth-child(4) {
+    width: 10%;
+    line-height: 15px;
+    color: #989393;
+    text-transform: uppercase;
+}
+
+table.table-live tbody tr td:nth-child(5) {
+    width: 5%;
+}
+table.table-live tbody tr td:nth-child(5) img{
+    width: 100%;
+}
+table.table-live tbody tr td:nth-child(6) {
+    width: 25%;
+}
+#fixture table.table-live tbody tr td:last-child {
+    width: 10%;
+}
+
+table.table-live tbody tr.upcoming-row td .upcoming {
+    color: #006442;
+}
+table.table-live tbody tr td .upcoming h2 {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+table.table-live tbody tr td .upcoming .liveup {
+    margin-left: 20%;
+}
+table.table-live tbody tr td .liveup {
+    margin-left: 10%;
+    margin-top: 15px;
+}
+table.table-live tbody tr.upcoming-row td .upcoming span {
+    background-color: #006442;
+    font-weight: 700;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+table.table-live tbody tr.upcoming-row td .upcoming span:before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: -8px;
+    width: 50px;
+    height: 50px;
+    background: #006442;
+    border-radius: 50%;
+    z-index: -1;
+}
